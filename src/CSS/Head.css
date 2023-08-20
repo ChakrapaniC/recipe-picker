@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Crete+Round&family=Dancing+Script:wght@700&family=Montserrat:wght@500;600&family=Playfair+Display:wght@900&family=Poppins&family=Rubik+Wet+Paint&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background: linear-gradient(to right, #70e1f5, #ffd194);
+    min-height: 40vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+   font-family: 'Montserrat', sans-serif;
+}
+.nav-item{
+    /* max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+   
+    
+}
+.nav-text{
+    text-align: center;
+   
+}
+.nav-text .title{
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-shadow: 10px;
+}
+.title:first-letter{
+    font-size: 5rem;
+    color:  rgb(230, 121, 12);
+}
+.nav-item .tag{
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.input-box{
+    margin: 35px 0px;
+}
+.search-box{
+    width: 70%;
+    padding:0.8rem 1rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: 2px solid rgb(230, 121, 12);
+    color: rgb(230, 121, 12);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.search-btn{
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    background-color:  rgb(230, 121, 12);
+    color: #fff;
+    outline: none; border: 2px solid rgb(230, 121, 12);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}

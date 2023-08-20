@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+
+// import axios from 'axios';
+import { Route, Routes } from 'react-router-dom';
+import Fullrecipe from './components/Fullrecipe';
+import { Head } from './components/Head';
+import Recipe from './components/Recipe';
+import Favoriterecipe from './components/Favoriterecipe';
+// import { useEffect } from 'react';
+// import axios from 'axios';
 
 function App() {
+  // const getData = async () =>{
+  //   await axios.get(`https://api.spoonacular.com/recipes/715538/similar?apiKey=c8ed2c2b1ae74e76af74c48ceebcee74`)
+  //   .then((res)=>{
+  //     console.log(res.data);
+  //   }).catch((err)=>{
+  //     console.log(err)
+  //   })
+
+   
+  // }
+  // useEffect(() => {
+  //    getData();
+  // }, [])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Head/>
+      <Routes>
+       <Route path='/' element={<Recipe/>}/> 
+       <Route path='/fullrecipe' element={<Fullrecipe/>}/> 
+       <Route path='/favorite' element={<Favoriterecipe/>} />
+       </Routes>
+    </>
   );
 }
 
